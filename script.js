@@ -18,6 +18,10 @@ let promiseCombi=Promise.all(arr);
 promiseCombi.then((values)=>{
 	console.log("success");
 	for(let i=1;i<=3;i++){
-		let promise="promise"+i;
+		let promise="Promise "+i;
+		let val=values[i-1];
+		let tr=document.createElement('tr');
+		tr.innerHTML=`<td>${promise}</td><td>${val}</td>`;
+		tbody.appendChild(tr);
 	}
 });
