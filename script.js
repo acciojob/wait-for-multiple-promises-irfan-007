@@ -17,7 +17,7 @@ tbody.innerHTML="<tr><td colspan=2>Loading...</td></tr>"
 let promiseCombi=Promise.all(arr);
 promiseCombi.then((values)=>{
 	console.log("success");
-	tbody.innerHTML="";  
+	// tbody.innerHTML="";
 	for(let i=1;i<=3;i++){
 		let promise="Promise "+i;
 		let val=values[i-1];
