@@ -1,15 +1,15 @@
 //your JS code here. If required.
 let promise1=new Promise((resolved,rejected)=>{
 	let time=Math.floor(Math.random()*3)+1;
-	setTimeout(()=>resolved(time),time);
+	setTimeout(()=>resolved(time),time*1000);
 });
 let promise2=new Promise((resolved,rejected)=>{
 	let time=Math.floor(Math.random()*3)+1;
-	setTimeout(()=>resolved(time),time);
+	setTimeout(()=>resolved(time),time*1000);
 });
 let promise3=new Promise((resolved,rejected)=>{
 	let time=Math.floor(Math.random()*3)+1;
-	setTimeout(()=>resolved(time),time);
+	setTimeout(()=>resolved(time),time*1000); 
 });
 const arr=[promise1,promise2,promise3];
 const tbody=document.getElementById("output");
