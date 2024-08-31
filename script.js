@@ -13,7 +13,7 @@ let promise3=new Promise((resolved,rejected)=>{
 });
 const arr=[promise1,promise2,promise3];
 const tbody=document.getElementById("output");
-tbody.innerHTML="<tr><td colspan=2>Loading...</td></tr>"
+tbody.innerHTML=`<tr id="loading"><td colspan=2>Loading...</td></tr>`
 let promiseCombi=Promise.all(arr);
 promiseCombi.then((values)=>{
 	console.log("success");
